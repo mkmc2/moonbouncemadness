@@ -1,0 +1,89 @@
+body {
+    font-family: "Raleway", sans-serif;
+}
+.nav-link {
+    color: white;
+}
+.navbar {
+    font-weight: 100;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 3;
+}
+.navbar h3 {
+    font-weight: 100;
+}
+.nav-link:hover {
+    transition: border 0.5s;
+    border-bottom: 1px solid white;
+}
+#showcase {
+    background: url("https://images.unsplash.com/photo-1498940757830-82f7813bf178?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80") bottom center / cover no-repeat;
+    min-height: 750px;
+    position: relative;
+}
+#showcase h1 {
+    font-family: "Questrial", sans-serif;
+    line-height: 1;     
+}
+#overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+#header {
+    z-index: 2;
+}
+#bookButton {
+    font-size: 1.5rem;
+    background-color: #36b3a8;
+    border-radius: 2rem;
+    border-color: #36b3a8;
+}
+/* Card Section */
+#cardTitle {
+    color: #36b3a8;
+    text-transform: uppercase;
+}
+
+#cardButton {
+    color: #36b3a8;
+    border-color: #36b3a8;
+}
+#cardButton:hover {
+    color: #ffffff;
+    background-color: #36b3a8;
+}
+
+/* Quotes Section */
+#quotesIcon {
+    color: #36b3a8;
+    font-size: 1.5rem;
+}
+
+/* Slider Section */
+#carouselLink {
+    color: #36b3a8;
+}
+/* media queries */
+
+@media (max-width: 768px) {
+    .navbar {
+        background: #1f1f1f;     
+    }
+    .navbar .nav-link:hover {
+        border-bottom: none;
+    }
+    #showcase {
+        min-height: 500px;
+    }
+    #showcase h1 {
+        font-size: 4rem;
+    }
+}
